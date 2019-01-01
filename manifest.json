@@ -1,0 +1,39 @@
+{
+  "name": "Enhanced Steam Review",
+  "version": "1.0",
+  "description": "Make your Steam Reviews look better",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/ico-16.png",
+      "32": "images/ico-32.png",
+      "48": "images/ico-48.png",
+      "128": "images/ico-128.png"
+    }
+  },
+	"commands": {
+		"cmd_update": {
+			"suggested_key": {
+			  "default": "Ctrl+Space",
+			  "mac": "Command+Space",
+			  "windows": "Ctrl+Space"
+			},
+			"description": "Update Reviews"
+		}
+	},
+  
+  "icons": {
+    "16": "images/ico-16.png",
+    "32": "images/ico-32.png",
+    "48": "images/ico-48.png",
+    "128": "images/ico-128.png"
+  },
+  "manifest_version": 2
+}
